@@ -86,16 +86,17 @@ header > h1 {
 }
 
 
-  /* ===== NAV (debajo del título) ===== */
+  /* ===== NAV  ===== */
 nav {
-    order: 5;                      /* va justo debajo del título */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    position: relative;
-    padding-bottom: 0.5rem;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #000;
+}
   
   nav ul {
     list-style: none;
@@ -126,10 +127,15 @@ nav {
     z-index: 200;
   }
   
-  /* muestra el megamenú al pasar el ratón por “Acciones” */
-  nav ul:nth-of-type(2):hover .megamenu {
-    display: flex;
-  }
+  /* muestra el megamenú al pasar el ratón por “Administración” */
+nav ul:nth-of-type(3):hover .megamenu {
+  display: flex;
+}
+
+/* muestra el megamenú al pasar el ratón por "Sistema” */
+nav ul:nth-of-type(4):hover .megamenu {
+  display: flex;
+}
   
   /* Columnas dentro del megamenú */
   .columna-menu h4 {
