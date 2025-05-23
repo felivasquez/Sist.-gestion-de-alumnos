@@ -18,7 +18,7 @@ function cargarVista(pagina) {
 }
 
 
-document.getElementById("menu-toggle").addEventListener("click", function () {
+document.getElementById("menu-toggle").addEventListener("DOMContentLoaded", function () {
     document.getElementById("nav-menu").classList.toggle("active");
 });
 

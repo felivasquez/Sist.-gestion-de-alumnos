@@ -6,6 +6,10 @@
     margin: 0 auto;
     gap: 0.25rem;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 .buscador{
