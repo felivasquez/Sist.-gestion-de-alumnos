@@ -8,19 +8,16 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     border-radius: 8px;
     overflow: hidden;
-    margin-left: 0.25rem;
-    margin-right: 0.5rem;
 }
 .tabla thead{
-    background-color: #ccc;
+    background-color: #0077a6;
     font-weight: bold;
 }
 .tabla th{
     text-align: left;
     padding: 0.7rem;
-    border-bottom: 1px solid #e0e0e0;
     font-size: 1.1rem;
-    color: #001a24;
+    color: #fff;
 }
 .tabla td{
     text-align: left;
@@ -29,18 +26,7 @@
     padding: 0.4rem;
     border-bottom: 1px solid #e0e0e0;
 }
-.tabla td button{
-    background: #00384a;
-    color: #fff;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 20%;
-}
-.tabla td button:hover{
-    background: #f0f0f0;
-    color: #001a24;
-}
+
 
 .tabla tbody tr:hover{
     background-color: #f1f1f1;

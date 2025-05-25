@@ -5,9 +5,10 @@
     box-sizing: border-box;
   }
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background: 	#e6f2f7;
+  color: #002B36;
+  padding-right: 12px;
 }
 
   /* ===== HEADER ===== */
@@ -17,11 +18,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    background: #fff;
+    background: #0077a6;
     border-bottom: 1px solid #000;
     position: relative;
     z-index: 100;
     height:6rem;
+    color: #fff;
   }
   
   /* — Logo (izquierda) — */
@@ -48,18 +50,9 @@ body {
   }
   .user-name {
     font-size: 0.9rem;
-}
-.logout-btn {
-    background: #00384a;
     color: #fff;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    cursor: pointer;
 }
-.logout-btn:hover {
-    background: #f0f0f0;
-    color: #000;
-}
+
 
   /* — Botón “☰” (solo en móvil) — */
 .menu-btn {
@@ -82,6 +75,7 @@ header > h1 {
     text-align: center;    /* por si ocupa más ancho */
     z-index: 10;           /* encima de otros elementos */
     flex: none;
+    color: #fff;
 }
 
 
@@ -93,13 +87,13 @@ nav {
   gap: 3rem;
   position: relative;
   padding: 1rem;
-  background: #fff;
-  border-bottom: 1px solid #000;
+  background: #0077a6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 nav ul {
   list-style: none;
-  position: relative;            /* para el megamenú */
+  position: relative;
 }
 
 nav ul li a {
@@ -109,6 +103,7 @@ nav ul li a {
   color: #00384a;
   font-weight: 500;
   border-radius: 4px;
+  color: #fff;
 }
 
 /* ===== Megamenú (solo al hover) ===== */
@@ -117,7 +112,7 @@ nav ul li a {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
+  background: #0077a6;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   flex-direction: row;
@@ -156,7 +151,7 @@ nav ul:nth-of-type(4):hover .megamenu {
 .columna-menu ul li a {
   position: relative;
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .columna-menu ul li a::after {
@@ -189,4 +184,5 @@ main iframe#contenido {
 iframe {
   flex-grow: 1;
   border: none;
+  padding: 1rem;
 }
