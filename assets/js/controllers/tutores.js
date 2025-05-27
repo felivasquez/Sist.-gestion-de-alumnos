@@ -5,13 +5,15 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("/alumnos")
         .then(res => res.json())
         .then(data => {
-            data.forEach(alumno => {
+            data.forEach(tutor => {
                 const fila = document.createElement("tr");
 
                 fila.innerHTML = `
-                    <td>${alumno.Id_alumno}</td>
-                    <td>${alumno.Nombre}, ${alumno.Apellido.toUpperCase()}</td>
-                    <td>${alumno.Legajo}</td>
+                    <td>${tutor.Id_tutor}</td>
+                    <td>${tutor.Nombre}, ${tutor.Apellido.toUpperCase()}</td>
+                    <td>${tutor.Dni}</td>
+                    <td>${tutor.Cuil}</td>
+                    <td>${tutor.Telefono}</td>
                     <td></td>
                     <td>
                         <button class="ver-mas" onclick="mostrarModal()">Ver Mas</button>

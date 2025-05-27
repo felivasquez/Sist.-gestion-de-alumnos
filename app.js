@@ -20,6 +20,18 @@ app.use('/alumnos', alumnosRouter);
 const materiasRouter = require('./routes/materias');
 app.use('/materias', materiasRouter);
 
+//Ruta para cursos
+const cursosRouter = require('./routes/cursos');
+app.use('/cursos', cursosRouter);
+
+//Ruta para planes
+const planesRouter = require('./routes/planes');
+app.use('/planes', planesRouter);
+
+//Ruta para tutores
+const tutoresRouter = require('./routes/tutores');
+app.use('/tutores', tutoresRouter);
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en puerto ${PORT}`);

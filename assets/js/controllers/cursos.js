@@ -1,18 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const tbody = document.querySelector("#alumnosTable tbody");
+    const tbody = document.querySelector("#materiasTable tbody");
 
-    fetch("/alumnos")
+    fetch("/materias")
         .then(res => res.json())
         .then(data => {
-            data.forEach(alumno => {
+            data.forEach(curso => {
                 const fila = document.createElement("tr");
 
                 fila.innerHTML = `
-                    <td>${alumno.Id_alumno}</td>
-                    <td>${alumno.Nombre}, ${alumno.Apellido.toUpperCase()}</td>
-                    <td>${alumno.Legajo}</td>
-                    <td></td>
+                    <td>${curso.Id_curso}</td>
+                    <td>${curso.Nombre_curso}</td>
+                    <td>${curso.Id_plan}</td>
                     <td>
                         <button class="ver-mas" onclick="mostrarModal()">Ver Mas</button>
                         <button class="editar" onclick="mostrarModal()">Editar</button>
