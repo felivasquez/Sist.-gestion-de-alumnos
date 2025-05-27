@@ -12,9 +12,13 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+//Ruta para Alumnos
 const alumnosRouter = require('./routes/alumnos');
-
 app.use('/alumnos', alumnosRouter);
+
+//Ruta para materias
+const materiasRouter = require('./routes/materias');
+app.use('/materias', materiasRouter);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

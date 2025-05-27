@@ -26,8 +26,9 @@
     padding: 0.4rem;
     border-bottom: 1px solid #e0e0e0;
 }
-
-
+.tabla tbody tr:nth-child(even){
+    background-color: #f4f4f4;
+}
 .tabla tbody tr:hover{
     background-color: #f1f1f1;
 }
